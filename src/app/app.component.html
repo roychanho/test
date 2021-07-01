@@ -1,0 +1,11 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+{{ users | json }}
+
+<div *ngFor="let item of users">
+  <img [src]="item.avatar" alt="">
+  <span>{{item.name}}</span>
+</div>
